@@ -1,0 +1,111 @@
+@import url(./Pages/About/About.css);
+@import url(./Pages/Programs/Program.css);
+@import url(./Pages/IntroSection/IntroSection.css);
+@import url(~slick-carousel/slick/slick.css);
+@import url(~slick-carousel/slick/slick-theme.css);
+
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    column-width: 33%;
+    -webkit-column-width: 33%;
+    -webkit-column-width: 33%;
+    padding: 0 1.2rem;
+}
+
+.gallery .pictures {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+    cursor: pointer;
+    margin-bottom: 1.2rem;
+}
+
+.gallery .pictures:hover {
+    filter: opacity(.8);
+}
+
+@media (max-width: 991px) {
+    .gallery {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        column-width: 100%;
+        -webkit-column-width: 100%;
+        -webkit-column-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        background-color: red;
+    }
+}
+
+
+/* model */
+
+.model {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    transition: opacity .4s ease, visibility .4s ease, transform .5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    overflow: hidden;
+    z-index: 999;
+}
+
+.model.open {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.model img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    line-height: 0;
+    box-sizing: border-box;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+
+.model.open svg {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    padding: .5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+.active {
+    color: #ffc107 !important;
+}
+
+.maps {
+    margin-top: 4rem;
+    width: 100%;
+    height: 80vh;
+}

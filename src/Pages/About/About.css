@@ -1,0 +1,226 @@
+@import url(./components/Message.css);
+.tab {
+    overflow: hidden;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    background-color: #fcfcfc;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    margin: auto;
+    border-radius: 12px;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .8rem 1rem;
+    transition: 0.3s;
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    display: none;
+    padding: .6rem;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.padding-top {
+    padding-top: 2rem;
+}
+
+.padding-bottom {
+    padding-bottom: 2rem;
+}
+
+.heading-top>h1 {
+    font-size: 2rem;
+    color: #e8604c;
+}
+
+.padding-top>h4 {
+    font-size: 1.6rem;
+    border-bottom: 1px dotted #999;
+}
+
+.padding-top>p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.points {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    padding: .25rem;
+    margin-right: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.icon.color {
+    background-color: rgba(102, 102, 102, 0.653);
+}
+
+.points>p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.features {
+    background-color: #f4f4f4;
+}
+
+/* For Members */
+
+.bod {
+    width: auto;
+}
+
+.card-bod {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 20rem);
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.card {
+    transition: 0.3s;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+}
+
+.card>img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    border: 2px #e8614c7c solid;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.card-bod>.card>h4 {
+    font-size: 1rem;
+}
+
+.board-card>.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: .3s ease-in-out;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* .container {
+    padding: 2px 16px;
+} */
+
+.advisory-board {
+    margin-top: 5rem;
+}
+
+.points>ul>li {
+    /* list-style-type: circle; */
+}
+
+.advisory-board>h2,
+.bod>h2 {
+    font-size: 1.8rem;
+    color: #e8604c;
+    margin-bottom: 2rem;
+}
+
+.heading-top>h2 {
+    font-size: 1.8rem;
+    color: #e8604c;
+    margin-bottom: 2rem;
+}
+
+.board-card .card>h3 {
+    font-size: 1rem;
+}
+
+.board-card .card>h6 {
+    font-size: .8rem;
+}
+
+.board-card {
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 1rem;
+}
+
+.card-bod .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.card-bod .card>h3 {
+    font-size: .8rem;
+    text-align: center;
+}
+
+.card-bod .card>h6 {
+    font-size: .6rem;
+    text-align: center;
+    font-weight: 500;
+    margin-top: .5rem;
+}
+
+/* Service Facilities */
+
+.services>p {
+    text-align: justify;
+}
+
+.services>h4 {
+    font-size: 1.4rem;
+    border-bottom: 1px dotted #999;
+    font-family: "Lora";
+}
+
+.services {
+    margin: 2rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .board-card,
+    .card-bod {
+        grid-template-columns: repeat(1, 400px);
+    }
+}

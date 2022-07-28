@@ -1,0 +1,46 @@
+/* Plus Two */
+
+table {
+    border-collapse: collapse;
+    overflow-x: auto;
+    width: 100%;
+    border-spacing: 0;
+}
+
+th {
+    font-size: 1rem;
+}
+
+td {
+    font-size: .8rem;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 1rem;
+    width: 12%;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+/* program */
+
+.heading-two {
+    font-size: 1.8rem;
+    color: #e8604c;
+}
+
+.heading-point>h6 {
+    font-size: 1.2rem;
+}
+
+.school-table>td,
+th {
+    width: 5%;
+    text-align: center;
+}

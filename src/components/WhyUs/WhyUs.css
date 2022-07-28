@@ -1,0 +1,61 @@
+.why-us-card .card {
+     display: flex;
+    flex-direction: column;
+    width: 33%;
+    justify-content:center;
+    align-items: center;
+    justify-items: center;
+    border-radius: 12px;
+    gap: 2rem;
+    background-color: #fff;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);     */
+    margin: 1rem 0;  
+    padding: 1rem;
+}
+
+.top-content {
+    width: 100%;    
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.top-content>h6 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+
+.body-content > p{
+    font-size: 1.4rem;
+    padding:  1rem 0;
+    text-align: center;
+    color: #666;
+}
+
+.anchor {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: red;
+}
+
+.card img {
+    height: 10rem;
+    width: auto;
+}
+
+.card>h2 {
+    font-size: 2rem;
+}
+
+.anchor {
+    margin-top: 1rem;
+}
+
+.anchor>a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+}

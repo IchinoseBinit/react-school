@@ -1,0 +1,32 @@
+.image {
+    height: 80vh;
+    z-index: 1;
+}
+
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.heading-title {
+    /* margin-top: 8rem; */
+    font-size: 3rem;
+    text-align: left;
+}
+
+.why-us-container {
+    background-color: #f4f4f489;
+    margin-top: 5rem ;
+    padding: 5rem;
+}
+
+.why-us-card {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+

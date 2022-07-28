@@ -1,0 +1,154 @@
+.navbar-container {
+    background-color: #e5e5e55a;
+    padding-bottom: 1rem;
+}
+
+.navbar {
+    padding: 2rem;
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    gap: 2rem;
+    width: fit-content;
+    justify-content: center;
+    margin:  0 auto -0 auto;
+    z-index: 2;
+    overflow: visible;
+    
+    background-color: #fcfcfc;
+    box-shadow: 0 15px 45px -9px rgb(0 0 0 / 20%);
+    border-radius: 3;
+}
+
+
+
+.navbar ul {
+    /* display: inline-block;
+    margin-right: 2rem; */
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.navbar ul li a {
+    color: rgba(61,61,61,.69);
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    align-items: flex-end;
+    /* align-items: center; */
+}
+
+.navbar ul li a:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s ease-in-out;
+    width: 60%;
+    color: rgba(61,61,61,1);
+}
+
+.navbar ul li a.active::after {
+    opacity: 1;
+    visibility: visible;
+    width: 60%;
+    background-color: #e8604c;
+
+}
+
+.navbar ul li a.active {
+    color: #e8604c;
+}
+
+
+.navbar ul li a::after {
+    height: 0.15rem;
+    width: 0;
+    content: '';
+    display: block;
+    background-color: #e8604c;
+    margin-right: 20%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sub-links {
+    display: flex;
+    width: 100%;
+}
+
+/* .navbar ul li a{
+    color: white;
+    font-weight: 600;
+  } */
+
+.hamburger-menu {
+    display: none;
+    gap: .5rem;
+}
+
+.hamburger-menu .line {
+    background-color: white;
+    width: 1.75rem;
+    height: .2rem;
+}
+
+.logo {
+    width: 5rem;
+}
+
+.right-button {
+    display: flex;
+    gap: 2rem;
+    margin-left: auto;
+}
+
+.right-button > button {
+    background-color: rgba(0, 255, 255, 0.5);
+    padding: 1rem;
+    color: black;
+    border-radius: 6px;
+}
+
+@media all and (max-width: 500px) {
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .navbar {
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .sub-links {
+        top: 5rem;
+        background-color: #003092;
+        width: 100%;
+        position: absolute;
+        transition: all 1s ease-in-out;
+        z-index: 99;
+        left: -100rem;
+    }
+
+    .sub-links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .active {
+        left: 0;
+        display: block;
+    }
+
+    /* .right-button {
+        flex-direction: column;
+        width: 100%;
+    } */
+
+    
+}

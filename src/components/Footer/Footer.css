@@ -1,0 +1,12 @@
+.footer {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 2rem;
+    color: white;  
+}
+
+.footer > p {
+    font-size: 1.4rem;
+}

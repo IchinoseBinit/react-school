@@ -1,0 +1,58 @@
+.top-navbar {
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    /* color: white; */
+    gap: 2rem;
+    background-color: #e5e5e55a;
+}
+
+.top-navbar > img {
+    height: 4rem;
+    width: auto;
+}
+
+.widget {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.last-item {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.description > h6 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.description > p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.text {
+    font-size: 1.2rem;
+}
+
+@media all and (max-width: 500px) {
+    .top-navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .last-item {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,132 @@
+.img {
+    background-image: url(../../assets/images/contact-us.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.overlay {
+    position: relative;
+    height: 35vh;
+    background-color: rgba(0, 0, 0, 0.434);
+}
+
+.img .overlay>h1 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    font-size: 3rem;
+}
+
+
+.bread-crumbs {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    display: flex;
+    background-color: white;
+    width: max-content;
+    padding: 1.5rem;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;    
+    
+}
+
+.bread-crumbs > a, p {
+    font-size: 1.6rem;
+}
+
+.contact-container {
+    margin-top: 8rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+}
+
+.left-container > h2 {
+    font-size: 3rem;
+}
+
+.left-container > h3 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+}
+
+.left-container > p {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-align: justify;
+    color: #666;
+}
+
+.right-container{
+    flex: 1;
+}
+
+.contact .right-container form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+}
+
+.contact .right-container form input,.contact .right-container form textarea {
+    padding: 1.4rem 2rem;
+    background-color: #faf5ee;
+    font-size: 1.4rem;
+    width: 100%;
+    border-radius: 0.6rem;
+}
+
+.contact .right-container form textarea{
+    grid-column: 1/3;
+}
+
+.contact .right-container form .button{
+    grid-column: 1/3;
+}
+
+.contact .right-container form button{
+    padding: 2rem 4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #e8604c;
+    border-radius: 1.0rem;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.address-container {
+    margin-top: 9rem;
+    display: flex;
+    gap: 2.5rem;
+    
+    border-radius: 12px;
+}
+
+.address-card {
+    padding: 2rem;
+    flex-basis: 33%;
+    color: #666;
+    font-size: 1.6rem;
+    font-weight: 500;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.maps {
+    margin-top: 8rem;
+    width: 100%;
+    height: 80vh;
+}
